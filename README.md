@@ -1,6 +1,7 @@
 # ✨ Twinkle Quote
 
-Twinkle Quote is a simple and elegant Flutter mobile application that delivers a daily spark of inspiration through carefully curated quotes.  
+Twinkle Quote is a simple and elegant Flutter mobile application that delivers a daily spark of
+inspiration through carefully curated quotes.  
 The app focuses on a calm user experience, beautiful UI, and smooth interactions.
 
 ---
@@ -52,13 +53,17 @@ Example response structure:
 
 ## 📸 Screenshots
 
-_(Add screenshots here once uploaded to the Play Store or GitHub)_
+<img width="23%" alt="image" src="./assets/screenshots/screen-one.png" />
+<img width="23%" alt="image" src="./assets/screenshots/screen-two.png" />
+<img width="23%" alt="image" src="./assets/screenshots/screen-three.png" />
+<img width="23%" alt="image" src="./assets/screenshots/screen-four.png" />
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Flutter SDK installed
 - Android Studio / VS Code
 - Android device or emulator
@@ -87,6 +92,7 @@ The generated `.aab` file can be uploaded to Google Play Console.
 ## 🔐 Privacy
 
 Twinkle Quote:
+
 - Does **not** collect personal data
 - Does **not** use analytics or tracking
 - Stores favorites **locally on device only**
@@ -108,5 +114,7 @@ You are free to explore, learn, and adapt the code for your own projects.
 ---
 
 ✨ *A tiny spark of inspiration, every day.*
+
 # Twinkle-Quote-App
+
 # Twinkle-Quote-App
