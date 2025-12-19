@@ -53,11 +53,12 @@ Example response structure:
 
 ## 📸 Screenshots
 
-<img width="23%" alt="image" src="./assets/screenshots/screen-one.png" />
-<img width="23%" alt="image" src="./assets/screenshots/screen-two.png" />
-<img width="23%" alt="image" src="./assets/screenshots/screen-three.png" />
-<img width="23%" alt="image" src="./assets/screenshots/screen-four.png" />
-
+<p align="center">
+    <img width="22%" alt="image" src="./assets/screenshots/screen-one.png" />
+    <img width="22%" alt="image" src="./assets/screenshots/screen-two.png" />
+    <img width="22%" alt="image" src="./assets/screenshots/screen-three.png" />
+    <img width="22%" alt="image" src="./assets/screenshots/screen-four.png" />
+</p>
 ---
 
 ## 🚀 Getting Started
