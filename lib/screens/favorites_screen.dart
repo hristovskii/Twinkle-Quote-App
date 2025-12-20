@@ -63,7 +63,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
           onPressed: () => context.pop(),
         ),
         centerTitle: true,
-        title: const Text('Favorites'),
+        title: const Text('Favorites', style: TextStyle(fontSize: 32)),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),

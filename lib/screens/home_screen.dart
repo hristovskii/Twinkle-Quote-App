@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:twinkle_quote/widgets/app_bar.dart';
 import '../models/quote.dart';
 import '../services/favorites_service.dart';
 import '../services/quote_service.dart';
@@ -90,34 +91,13 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
+    // final colorScheme = theme.colorScheme;
 
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
-        title: RichText(
-          text: TextSpan(
-            children: [
-              TextSpan(
-                text: 'Twinkle ',
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 0.6,
-                  color: Colors.white.withOpacity(0.9),
-                ),
-              ),
-              TextSpan(
-                text: 'Quote',
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 0.6,
-                  color: const Color(0xFF60A5FA),
-                ),
-              ),
-            ],
-          ),
-        ),
+        title: HomeAppBar(),
 
         backgroundColor: Colors.transparent,
         elevation: 0,
