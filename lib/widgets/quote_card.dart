@@ -19,21 +19,18 @@ class QuoteCard extends StatelessWidget {
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [
-            Color(0xFF1E293B),
-            Color(0xFF0F172A),
-          ],
+          colors: [Color(0xFF1E293B), Color(0xFF0F172A)],
         ),
 
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF60A5FA).withOpacity(0.15),
+            color: const Color(0xFF60A5FA).withValues(alpha: 0.15),
             blurRadius: 24,
             offset: const Offset(0, 12),
           ),
         ],
 
-        border: Border.all(color: Colors.white.withOpacity(0.08)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
@@ -53,7 +50,7 @@ class QuoteCard extends StatelessWidget {
               textAlign: TextAlign.center,
               style: theme.textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.w600,
-                color: Colors.white.withOpacity(0.95),
+                color: Colors.white.withValues(alpha: 0.95),
                 height: 1.4,
               ),
             ),
@@ -65,7 +62,7 @@ class QuoteCard extends StatelessWidget {
               child: Text(
                 '- ${quote.author}',
                 style: theme.textTheme.bodyMedium?.copyWith(
-                  color: Colors.white.withOpacity(0.6),
+                  color: Colors.white.withValues(alpha: 0.6),
                   fontStyle: FontStyle.italic,
                 ),
               ),

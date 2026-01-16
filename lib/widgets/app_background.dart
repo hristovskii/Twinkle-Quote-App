@@ -17,7 +17,7 @@ class AppBackground extends StatelessWidget {
         ),
 
         Positioned.fill(
-          child: Container(color: Colors.black.withOpacity(0.45)),
+          child: Container(color: Colors.black.withValues(alpha: 0.45)),
         ),
 
         child,

@@ -14,7 +14,7 @@ class HomeAppBar extends StatelessWidget {
               fontWeight: FontWeight.w600,
               letterSpacing: 0.6,
               fontSize: 32,
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha: 0.9),
             ),
           ),
           TextSpan(

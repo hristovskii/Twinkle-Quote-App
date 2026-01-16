@@ -63,11 +63,12 @@ class _HomeScreenState extends State<HomeScreen> {
             'Could not load a quote. Please try again in 30 seconds.';
       });
     } finally {
-      if (!mounted) return;
-      setState(() {
-        _isLoading = false;
-        _isFetchingNew = false;
-      });
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+          _isFetchingNew = false;
+        });
+      }
     }
   }
 
@@ -127,18 +128,20 @@ class _HomeScreenState extends State<HomeScreen> {
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
                             colors: [
-                              Colors.white.withOpacity(0.12),
-                              Colors.white.withOpacity(0.05),
+                              Colors.white.withValues(alpha: 0.12),
+                              Colors.white.withValues(alpha: 0.05),
                             ],
                           ),
 
                           border: Border.all(
-                            color: Colors.white.withOpacity(0.18),
+                            color: Colors.white.withValues(alpha: 0.18),
                           ),
 
                           boxShadow: [
                             BoxShadow(
-                              color: const Color(0xFF60A5FA).withOpacity(0.25),
+                              color: const Color(
+                                0xFF60A5FA,
+                              ).withValues(alpha: 0.25),
                               blurRadius: 20,
                               offset: const Offset(0, 8),
                             ),
@@ -148,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           'A tiny spark of inspiration ✨',
                           textAlign: TextAlign.center,
                           style: theme.textTheme.bodyMedium?.copyWith(
-                            color: Colors.white.withOpacity(0.95),
+                            color: Colors.white.withValues(alpha: 0.95),
                             fontWeight: FontWeight.w500,
                             letterSpacing: 0.4,
                           ),
@@ -197,12 +200,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: isFavorite
-                              ? const Color(0xFF60A5FA).withOpacity(0.15)
-                              : Colors.white.withOpacity(0.05),
+                              ? const Color(0xFF60A5FA).withValues(alpha: 0.15)
+                              : Colors.white.withValues(alpha: 0.05),
                           border: Border.all(
                             color: isFavorite
                                 ? const Color(0xFF60A5FA)
-                                : Colors.white.withOpacity(0.2),
+                                : Colors.white.withValues(alpha: 0.2),
                           ),
                         ),
                         child: IconButton(
@@ -218,7 +221,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 : Icons.favorite_border_rounded,
                             color: isFavorite
                                 ? const Color(0xFF60A5FA)
-                                : Colors.white.withOpacity(0.7),
+                                : Colors.white.withValues(alpha: 0.7),
                           ),
                         ),
                       ),
@@ -241,9 +244,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         icon: const Icon(Icons.bookmarks_rounded),
                         label: const Text('Favorites'),
                         style: OutlinedButton.styleFrom(
-                          foregroundColor: Colors.white.withOpacity(0.85),
+                          foregroundColor: Colors.white.withValues(alpha: 0.85),
                           side: BorderSide(
-                            color: Colors.white.withOpacity(0.25),
+                            color: Colors.white.withValues(alpha: 0.25),
                           ),
                           padding: const EdgeInsets.symmetric(
                             vertical: 14,
